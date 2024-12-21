@@ -22,10 +22,36 @@ public class App
     	Transaction tx=session.beginTransaction();
     	
     	
-    	session.save(emp);
+//    	session.save(emp);
+    	
+    	System.out.println("Record save sussessfully");
+    	
+//    	get data
+//    	
+  	Employee e1=session.get(Employee.class,1);
+   	
+   	System.out.println(e1);
+   	
+   	
+//	Employee e1=session.get(Employee.class, 1);
+//
+//    e1.setEName("Aditya");
+//	e1.setESalary(60);
+//	session.update(e1);
+//	
+//	System.out.println("update sussessfully");
+	
+//	
+//	Employee e1=session.get(Employee.class, 1);
+//	session.delete(e1);
+    	
+    	
+    	
+    	
     	tx.commit();
     	session.close();
-    	System.out.println("Record save sussessfully");
+    	
+    	
     	
     	
     }
